@@ -1,0 +1,16 @@
+{
+    "appenders": {
+        "multi": {
+            "type": "multiFile",
+            "base": "logs/",
+            "filename": "deletion.log",
+            "extension": ".log",
+            "property": "categoryName",
+            "maxLogSize": 10485760,
+            "numBackups": 3
+        }
+    },
+    "categories": {
+        "default": {"appenders": ["multi"], "level": "INFO"}
+    }
+}

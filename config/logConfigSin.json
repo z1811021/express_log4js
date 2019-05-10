@@ -1,0 +1,13 @@
+{
+    "appenders": {
+        "deletion": {
+            "type": "file",
+            "filename": "log/deletion.log",
+            "maxLogSize": 10485760,
+            "numBackups": 3
+        }
+    },
+    "categories": {
+        "default": {"appenders": ["deletion"], "level": "INFO"}
+    }
+}
